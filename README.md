@@ -16,6 +16,7 @@ To re-execute the analysis, run the following notebooks in the following order:
 3. [`extract-delays.ipynb`](extract-delays.ipynb) (R): Calculate acceptance and publications delays from the PubMed history dates.
 4. [`process-nlm-catalog.ipynb`](process-nlm-catalog.ipynb) (python): Download and process the NLM Catalog which contains the journals indexed by PubMed.
 5.  [`visualize-history.ipynb`](visualize-history.ipynb) (R): Plot historical delays and export several TSV summaries of the dataset.
+6. [`webapp.ipynb`](webapp.ipynb) (python): Create JSON files used to initialize the select2 journal selection for the blog post.
 
 ## Datasets
 
