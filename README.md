@@ -1,5 +1,7 @@
 # The history of publishing delays
 
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.45516.svg)](http://dx.doi.org/10.5281/zenodo.45516)
+
 Here, we explore the history of scientific publishing delays. The findings from the analysis are discussed in a [blog post](http://blog.dhimmel.com/history-of-delays "Satoshi Village · The history of publishing delays") by Daniel Himmelstein and feature in *Nature News*.
 
 Delays are calculated from publisher-deposited PubMed history dates. Only journal articles published between 1960 and 2015 are included. Specifically, two delay types are calculated:
