@@ -11,12 +11,13 @@ Delays are calculated from publisher-deposited PubMed history dates. Only journa
 
 To re-execute the analysis, run the following notebooks in the following order:
 
-1. [`eutilities.ipynb`](eutilities.ipynb) (python): Use PubMed's EUtility API to retrieve the list of relevant IDs using [ESearch](http://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_ESearch_ "The E-utilities In-Depth: ESearch") and article summaries using [ESummary](http://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_ESummary_ "The E-utilities In-Depth: ESummary"). 
-2. [`process-esummary.ipynb`](process-esummary.ipynb) (python): Extract history dates from the ESummary XML output.
-3. [`extract-delays.ipynb`](extract-delays.ipynb) (R): Calculate acceptance and publications delays from the PubMed history dates.
-4. [`process-nlm-catalog.ipynb`](process-nlm-catalog.ipynb) (python): Download and process the NLM Catalog which contains the journals indexed by PubMed.
-5.  [`visualize-history.ipynb`](visualize-history.ipynb) (R): Plot historical delays and export several TSV summaries of the dataset.
-6. [`webapp.ipynb`](webapp.ipynb) (python): Create JSON files used to initialize the select2 journal selection for the blog post.
++ [`1.eutilities.ipynb`](1.eutilities.ipynb) (python): Use PubMed's EUtility API to retrieve the list of relevant IDs using [ESearch](http://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_ESearch_ "The E-utilities In-Depth: ESearch") and article summaries using [ESummary](http://www.ncbi.nlm.nih.gov/books/NBK25499/#_chapter4_ESummary_ "The E-utilities In-Depth: ESummary"). 
++ [`2.process-esummary.ipynb`](2.process-esummary.ipynb) (python): Extract history dates from the ESummary XML output.
++ [`3.extract-delays.ipynb`](3.extract-delays.ipynb) (R): Calculate acceptance and publications delays from the PubMed history dates.
++ [`4.process-nlm-catalog.ipynb`](4.process-nlm-catalog.ipynb) (python): Download and process the NLM Catalog which contains the journals indexed by PubMed.
++ [`5.visualize-history.ipynb`](5.visualize-history.ipynb) (R): Plot historical delays and export several TSV summaries of the dataset.
++ [`6.webapp.ipynb`](6.webapp.ipynb) (python): Create JSON files used to initialize the select2 journal selection for the blog post.
++ [`7.journal-metrics.ipynb`](7.journal-metrics.ipynb) (R): Compare delays by journal attributes.
 
 ## Datasets
 
