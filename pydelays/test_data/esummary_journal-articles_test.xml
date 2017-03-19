@@ -1,0 +1,316 @@
+<eSummaryResult>
+<DocSum>
+	<Id>27094199</Id>
+	<Item Name="PubDate" Type="Date">2016 Apr</Item>
+	<Item Name="EPubDate" Type="Date"/>
+	<Item Name="Source" Type="String">Circ Cardiovasc Genet</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Greene CS</Item>
+		<Item Name="Author" Type="String">Himmelstein DS</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Himmelstein DS</Item>
+	<Item Name="Title" Type="String">Genetic Association-Guided Analysis of Gene Networks for the Study of Complex Traits.</Item>
+	<Item Name="Volume" Type="String">9</Item>
+	<Item Name="Issue" Type="String">2</Item>
+	<Item Name="Pages" Type="String">179-84</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101489144</Item>
+	<Item Name="ISSN" Type="String">1942-325X</Item>
+	<Item Name="ESSN" Type="String">1942-3268</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+		<Item Name="PubType" Type="String">Review</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">ppublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">27094199</Item>
+		<Item Name="pii" Type="String">CIRCGENETICS.115.001181</Item>
+		<Item Name="doi" Type="String">10.1161/CIRCGENETICS.115.001181</Item>
+		<Item Name="rid" Type="String">27094199</Item>
+		<Item Name="eid" Type="String">27094199</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1161/CIRCGENETICS.115.001181</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2015/09/11 00:00</Item>
+		<Item Name="accepted" Type="Date">2016/03/08 00:00</Item>
+		<Item Name="entrez" Type="Date">2016/04/21 06:00</Item>
+		<Item Name="pubmed" Type="Date">2016/04/21 06:00</Item>
+		<Item Name="medline" Type="Date">2017/01/07 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"/>
+	<Item Name="HasAbstract" Type="Integer">0</Item>
+	<Item Name="PmcRefCount" Type="Integer">1</Item>
+	<Item Name="FullJournalName" Type="String">Circulation. Cardiovascular genetics</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1161/CIRCGENETICS.115.001181</Item>
+	<Item Name="SO" Type="String">2016 Apr;9(2):179-84</Item>
+</DocSum>
+<DocSum>
+	<Id>26158728</Id>
+	<Item Name="PubDate" Type="Date">2015 Jul 9</Item>
+	<Item Name="EPubDate" Type="Date">2015 Jul 9</Item>
+	<Item Name="Source" Type="String">PLoS Comput Biol</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Himmelstein DS</Item>
+		<Item Name="Author" Type="String">Baranzini SE</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Baranzini SE</Item>
+	<Item Name="Title" Type="String">Heterogeneous Network Edge Prediction: A Data Integration Approach to Prioritize Disease-Associated Genes.</Item>
+	<Item Name="Volume" Type="String">11</Item>
+	<Item Name="Issue" Type="String">7</Item>
+	<Item Name="Pages" Type="String">e1004259</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101238922</Item>
+	<Item Name="ISSN" Type="String">1553-734X</Item>
+	<Item Name="ESSN" Type="String">1553-7358</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">26158728</Item>
+		<Item Name="doi" Type="String">10.1371/journal.pcbi.1004259</Item>
+		<Item Name="pii" Type="String">PCOMPBIOL-D-14-02222</Item>
+		<Item Name="pmc" Type="String">PMC4497619</Item>
+		<Item Name="rid" Type="String">26158728</Item>
+		<Item Name="eid" Type="String">26158728</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC4497619;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1371/journal.pcbi.1004259</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2014/12/10 00:00</Item>
+		<Item Name="accepted" Type="Date">2015/03/26 00:00</Item>
+		<Item Name="entrez" Type="Date">2015/07/10 06:00</Item>
+		<Item Name="pubmed" Type="Date">2015/07/15 06:00</Item>
+		<Item Name="medline" Type="Date">2016/03/24 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"/>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">4</Item>
+	<Item Name="FullJournalName" Type="String">PLoS computational biology</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1371/journal.pcbi.1004259</Item>
+	<Item Name="SO" Type="String">2015 Jul 9;11(7):e1004259</Item>
+</DocSum>
+<DocSum>
+	<Id>25648772</Id>
+	<Item Name="PubDate" Type="Date">2015 Jan 13</Item>
+	<Item Name="EPubDate" Type="Date">2015 Jan 13</Item>
+	<Item Name="Source" Type="String">PeerJ</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Simeonov KP</Item>
+		<Item Name="Author" Type="String">Himmelstein DS</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Himmelstein DS</Item>
+	<Item Name="Title" Type="String">Lung cancer incidence decreases with elevation: evidence for oxygen as an inhaled carcinogen.</Item>
+	<Item Name="Volume" Type="String">3</Item>
+	<Item Name="Issue" Type="String"/>
+	<Item Name="Pages" Type="String">e705</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101603425</Item>
+	<Item Name="ISSN" Type="String"/>
+	<Item Name="ESSN" Type="String">2167-8359</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed</Item>
+	<Item Name="PubStatus" Type="String">epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">25648772</Item>
+		<Item Name="doi" Type="String">10.7717/peerj.705</Item>
+		<Item Name="pii" Type="String">705</Item>
+		<Item Name="pmc" Type="String">PMC4304851</Item>
+		<Item Name="rid" Type="String">25648772</Item>
+		<Item Name="eid" Type="String">25648772</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC4304851;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.7717/peerj.705</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2014/11/04 00:00</Item>
+		<Item Name="accepted" Type="Date">2014/11/30 00:00</Item>
+		<Item Name="entrez" Type="Date">2015/02/05 06:00</Item>
+		<Item Name="pubmed" Type="Date">2015/02/05 06:00</Item>
+		<Item Name="medline" Type="Date">2015/02/05 06:01</Item>
+	</Item>
+	<Item Name="References" Type="List"/>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">0</Item>
+	<Item Name="FullJournalName" Type="String">PeerJ</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.7717/peerj.705</Item>
+	<Item Name="SO" Type="String">2015 Jan 13;3:e705</Item>
+</DocSum>
+<DocSum>
+	<Id>21736753</Id>
+	<Item Name="PubDate" Type="Date">2011 Jul 7</Item>
+	<Item Name="EPubDate" Type="Date">2011 Jul 7</Item>
+	<Item Name="Source" Type="String">BioData Min</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Himmelstein DS</Item>
+		<Item Name="Author" Type="String">Greene CS</Item>
+		<Item Name="Author" Type="String">Moore JH</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Moore JH</Item>
+	<Item Name="Title" Type="String">Evolving hard problems: Generating human genetics datasets with a complex etiology.</Item>
+	<Item Name="Volume" Type="String">4</Item>
+	<Item Name="Issue" Type="String">1</Item>
+	<Item Name="Pages" Type="String">21</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">101319161</Item>
+	<Item Name="ISSN" Type="String"/>
+	<Item Name="ESSN" Type="String">1756-0381</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed</Item>
+	<Item Name="PubStatus" Type="String">epublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">21736753</Item>
+		<Item Name="pii" Type="String">1756-0381-4-21</Item>
+		<Item Name="doi" Type="String">10.1186/1756-0381-4-21</Item>
+		<Item Name="pmc" Type="String">PMC3154150</Item>
+		<Item Name="rid" Type="String">21736753</Item>
+		<Item Name="eid" Type="String">21736753</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC3154150;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1186/1756-0381-4-21</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2010/10/19 00:00</Item>
+		<Item Name="accepted" Type="Date">2011/07/07 00:00</Item>
+		<Item Name="entrez" Type="Date">2011/07/09 06:00</Item>
+		<Item Name="pubmed" Type="Date">2011/07/09 06:00</Item>
+		<Item Name="medline" Type="Date">2011/07/09 06:01</Item>
+	</Item>
+	<Item Name="References" Type="List">
+		<Item Name="Erratum in" Type="String">BioData Min. 2016;9:9. PMID: 26848312</Item>
+	</Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">4</Item>
+	<Item Name="FullJournalName" Type="String">BioData mining</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1186/1756-0381-4-21</Item>
+	<Item Name="SO" Type="String">2011 Jul 7;4(1):21</Item>
+</DocSum>
+<DocSum>
+	<Id>25915600</Id>
+	<Item Name="PubDate" Type="Date">2015 Jun</Item>
+	<Item Name="EPubDate" Type="Date">2015 Apr 27</Item>
+	<Item Name="Source" Type="String">Nat Genet</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Greene CS</Item>
+		<Item Name="Author" Type="String">Krishnan A</Item>
+		<Item Name="Author" Type="String">Wong AK</Item>
+		<Item Name="Author" Type="String">Ricciotti E</Item>
+		<Item Name="Author" Type="String">Zelaya RA</Item>
+		<Item Name="Author" Type="String">Himmelstein DS</Item>
+		<Item Name="Author" Type="String">Zhang R</Item>
+		<Item Name="Author" Type="String">Hartmann BM</Item>
+		<Item Name="Author" Type="String">Zaslavsky E</Item>
+		<Item Name="Author" Type="String">Sealfon SC</Item>
+		<Item Name="Author" Type="String">Chasman DI</Item>
+		<Item Name="Author" Type="String">FitzGerald GA</Item>
+		<Item Name="Author" Type="String">Dolinski K</Item>
+		<Item Name="Author" Type="String">Grosser T</Item>
+		<Item Name="Author" Type="String">Troyanskaya OG</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Troyanskaya OG</Item>
+	<Item Name="Title" Type="String">Understanding multicellular function and disease with human tissue-specific networks.</Item>
+	<Item Name="Volume" Type="String">47</Item>
+	<Item Name="Issue" Type="String">6</Item>
+	<Item Name="Pages" Type="String">569-76</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">9216904</Item>
+	<Item Name="ISSN" Type="String">1061-4036</Item>
+	<Item Name="ESSN" Type="String">1546-1718</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">ppublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">25915600</Item>
+		<Item Name="pii" Type="String">ng.3259</Item>
+		<Item Name="doi" Type="String">10.1038/ng.3259</Item>
+		<Item Name="pmc" Type="String">PMC4828725</Item>
+		<Item Name="mid" Type="String">NIHMS670444</Item>
+		<Item Name="rid" Type="String">25915600</Item>
+		<Item Name="eid" Type="String">25915600</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC4828725;manuscript-id: NIHMS670444;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1038/ng.3259</Item>
+	<Item Name="History" Type="List">
+		<Item Name="received" Type="Date">2014/12/10 00:00</Item>
+		<Item Name="accepted" Type="Date">2015/03/06 00:00</Item>
+		<Item Name="entrez" Type="Date">2015/04/28 06:00</Item>
+		<Item Name="pubmed" Type="Date">2015/04/29 06:00</Item>
+		<Item Name="medline" Type="Date">2015/08/08 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List">
+		<Item Name="Comment in" Type="String">Nat Biotechnol. 2015 Jul;33(7):720-1. PMID: 26154012</Item>
+	</Item>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">56</Item>
+	<Item Name="FullJournalName" Type="String">Nature genetics</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1038/ng.3259</Item>
+	<Item Name="SO" Type="String">2015 Jun;47(6):569-76</Item>
+</DocSum>
+<DocSum>
+	<Id>20081222</Id>
+	<Item Name="PubDate" Type="Date">2010 Mar 1</Item>
+	<Item Name="EPubDate" Type="Date">2010 Jan 16</Item>
+	<Item Name="Source" Type="String">Bioinformatics</Item>
+	<Item Name="AuthorList" Type="List">
+		<Item Name="Author" Type="String">Greene CS</Item>
+		<Item Name="Author" Type="String">Sinnott-Armstrong NA</Item>
+		<Item Name="Author" Type="String">Himmelstein DS</Item>
+		<Item Name="Author" Type="String">Park PJ</Item>
+		<Item Name="Author" Type="String">Moore JH</Item>
+		<Item Name="Author" Type="String">Harris BT</Item>
+	</Item>
+	<Item Name="LastAuthor" Type="String">Harris BT</Item>
+	<Item Name="Title" Type="String">Multifactor dimensionality reduction for graphics processing units enables genome-wide testing of epistasis in sporadic ALS.</Item>
+	<Item Name="Volume" Type="String">26</Item>
+	<Item Name="Issue" Type="String">5</Item>
+	<Item Name="Pages" Type="String">694-5</Item>
+	<Item Name="LangList" Type="List">
+		<Item Name="Lang" Type="String">English</Item>
+	</Item>
+	<Item Name="NlmUniqueID" Type="String">9808944</Item>
+	<Item Name="ISSN" Type="String">1367-4803</Item>
+	<Item Name="ESSN" Type="String">1367-4811</Item>
+	<Item Name="PubTypeList" Type="List">
+		<Item Name="PubType" Type="String">Journal Article</Item>
+	</Item>
+	<Item Name="RecordStatus" Type="String">PubMed - indexed for MEDLINE</Item>
+	<Item Name="PubStatus" Type="String">ppublish</Item>
+	<Item Name="ArticleIds" Type="List">
+		<Item Name="pubmed" Type="String">20081222</Item>
+		<Item Name="pii" Type="String">btq009</Item>
+		<Item Name="doi" Type="String">10.1093/bioinformatics/btq009</Item>
+		<Item Name="pmc" Type="String">PMC2828117</Item>
+		<Item Name="rid" Type="String">20081222</Item>
+		<Item Name="eid" Type="String">20081222</Item>
+		<Item Name="pmcid" Type="String">pmc-id: PMC2828117;</Item>
+	</Item>
+	<Item Name="DOI" Type="String">10.1093/bioinformatics/btq009</Item>
+	<Item Name="History" Type="List">
+		<Item Name="entrez" Type="Date">2010/01/19 06:00</Item>
+		<Item Name="pubmed" Type="Date">2010/01/19 06:00</Item>
+		<Item Name="medline" Type="Date">2010/06/18 06:00</Item>
+	</Item>
+	<Item Name="References" Type="List"/>
+	<Item Name="HasAbstract" Type="Integer">1</Item>
+	<Item Name="PmcRefCount" Type="Integer">21</Item>
+	<Item Name="FullJournalName" Type="String">Bioinformatics (Oxford, England)</Item>
+	<Item Name="ELocationID" Type="String">doi: 10.1093/bioinformatics/btq009</Item>
+	<Item Name="SO" Type="String">2010 Mar 1;26(5):694-5</Item>
+</DocSum>
+</eSummaryResult>
