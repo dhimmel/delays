@@ -3,10 +3,13 @@ import mimetypes
 import importlib
 import logging
 import itertools
+import locale
 
 import tqdm
 from lxml import etree
 
+# Ensure datetime.datetime.strptime
+locale.setlocale(locale.LC_ALL, 'en_US.utf8')
 
 encoding_to_module = {
     'gzip': 'gzip',
@@ -40,10 +43,10 @@ def parse_date_text(text):
     element.
     The time on the date is discarded. A `datetime.date` object is returned
     """
-    date_, time_ = text.split(' ')
-    date_tuple = date_.split('/')
-    year, month, day = map(int, date_tuple)
-    return datetime.date(year, month, day)
+    try:
+        return datetime.datetime.strptime(text, '%Y/%m/%d').date()
+    except ValueError:
+        return None
 
 
 def parse_pubdate_text(text):
@@ -70,12 +73,10 @@ def parse_esummary_history(docsum):
     seen = set()
     for item in docsum.findall("Item[@Name='History']/Item[@Type='Date']"):
         name = item.get('Name')
-        try:
-            date_ = parse_date_text(item.text)
-        except Exception as e:
-            pubmed_id = int(docsum.findtext('Id'))
-            msg = (f'article {pubmed_id}; name: {name}; '
-                   f'date: {item.text}, threw: {e}')
+        date_ = parse_date_text(item.text)
+        if not date_:
+            id_ = int(docsum.findtext('Id'))
+            msg = f'article {id_}; name: {name}; invalid date: {item.text}'
             logging.warning(msg)
             continue
 
