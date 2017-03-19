@@ -1,0 +1,20 @@
+dist: trusty
+sudo: false
+language: generic
+before_install:
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    --output-document miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update --quiet conda
+  - conda info --all
+install:
+  - conda env create --quiet --file environment.yml
+  - source activate delays
+script:
+  - pytest pydelays
+  - jupyter nbconvert --to=script --stdout *.ipynb |
+    flake8 --exit-zero --show-source --ignore=E402,W291,E501,W391 -
+  - flake8 pydelays
