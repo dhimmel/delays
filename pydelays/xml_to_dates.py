@@ -4,8 +4,10 @@ import importlib
 import logging
 import itertools
 import locale
+import collections
 
 import tqdm
+import pandas
 from lxml import etree
 
 # Ensure datetime.datetime.strptime
@@ -43,10 +45,7 @@ def parse_date_text(text):
     element.
     The time on the date is discarded. A `datetime.date` object is returned
     """
-    try:
-        return datetime.datetime.strptime(text, '%Y/%m/%d').date()
-    except ValueError:
-        return None
+    return datetime.datetime.strptime(text, '%Y/%m/%d %H:%M').date()
 
 
 def parse_pubdate_text(text):
@@ -67,16 +66,20 @@ def parse_pubdate_text(text):
 
 
 def parse_esummary_history(docsum):
-    """docsum is an xml Element."""
+    """
+    docsum is an xml Element.
+    """
     # Extract all historical dates
     date_pairs = list()
     seen = set()
     for item in docsum.findall("Item[@Name='History']/Item[@Type='Date']"):
         name = item.get('Name')
-        date_ = parse_date_text(item.text)
-        if not date_:
+        try:
+            date_ = parse_date_text(item.text)
+        except ValueError as e:
             id_ = int(docsum.findtext('Id'))
-            msg = f'article {id_}; name: {name}; invalid date: {item.text}'
+            msg = (f'article {id_}; name: {name}; '
+                   f'date: {item.text}; error: {e}')
             logging.warning(msg)
             continue
 
@@ -97,14 +100,21 @@ def parse_esummary(elem):
     """
     Extract pubmed, journal, and date information from an eSummaryResult/DocSum
     """
-    article = dict()
+    article = collections.OrderedDict()
     article['pubmed_id'] = int(elem.findtext('Id'))
     article['journal_nlm_id'] = elem.findtext("Item[@Name='NlmUniqueID']")
     for key, name in ('pub', 'PubDate'), ('epub', 'EPubDate'):
         xpath = f"Item[@Name='{name}'][@Type='Date']"
         text = elem.findtext(xpath)
-        article[key] = parse_pubdate_text(text)
-    article.update(parse_esummary_history(elem))
+        try:
+            article[key] = parse_pubdate_text(text)
+        except ValueError as e:
+            msg = (f'article {article["pubmed_id"]}; name: {key}; '
+                   f'date: {text}; error: {e}')
+            logging.info(msg)
+            continue
+    history = parse_esummary_history(elem)
+    article.update(history)
     return article
 
 
@@ -131,3 +141,14 @@ def extract_articles_from_esummaries(path, n_articles=None, tqdm=tqdm.tqdm):
     if n_articles is not None:
         progress_bar.close()
     return articles
+
+
+def articles_to_dataframe(articles):
+    """
+    Convert a list of articles created by `extract_articles_from_esummaries`
+    into a pandas.DataFrame.
+    """
+    article_df = pandas.DataFrame(articles)
+    article_df = article_df.sort_values(by='pubmed_id')
+    article_df['published'] = article_df[['epub', 'pub']].min(axis='columns')
+    return article_df
