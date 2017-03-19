@@ -99,23 +99,3 @@ def pubmed_esummary(ids, write_file, retmax=100, retmin=20, sleep=0.34,
     progress_bar.close()
     # Write final line of XML
     write_file.write('</eSummaryResult>\n')
-
-
-def create_test_xml():
-    """
-    Run to recreate esummary_journal-articles_test.xml
-    """
-    directory = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(directory,
-                        'test_data', 'esummary_journal-articles_test.xml')
-    pubmed_ids = [
-        '27094199',  # Circ Cardiovasc Genet
-        '26158728',  # PLoS Comput Biol
-        '25648772',  # PeerJ
-        '21736753',  # BioData Min
-        '25915600',  # Nature Genet
-        '20081222',  # Bioinformatics
-    ]
-    with open(path, 'wt') as write_file:
-        pubmed_esummary(pubmed_ids, write_file)
-    return path
