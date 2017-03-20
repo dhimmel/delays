@@ -5,6 +5,7 @@ import logging
 import itertools
 import locale
 import collections
+import re
 
 import tqdm
 import pandas
@@ -56,13 +57,9 @@ def parse_pubdate_text(text):
     `eSummaryResult/DocSum/Item[@Name='EPubDate' @Type='Date']`
 
     See https://www.nlm.nih.gov/bsd/licensee/elements_article_source.html
-    A `datetime.date` object is returned or `None` if the date is incomplete
-    or corrupted.
+    A `datetime.date` object is returned.
     """
-    try:
-        return datetime.datetime.strptime(text, '%Y %b %d').date()
-    except ValueError:
-        return None
+    return datetime.datetime.strptime(text, '%Y %b %d').date()
 
 
 def parse_esummary_history(docsum):
@@ -89,11 +86,34 @@ def parse_esummary_history(docsum):
         seen.add(date_pair)
         date_pairs.append(date_pair)
     date_pairs.sort(key=lambda x: x[0])
-    history = dict()
+    history = collections.OrderedDict()
     for name, group in itertools.groupby(date_pairs, key=lambda x: x[0]):
         for i, (name, date_) in enumerate(group):
             history[f'{name}_{i}'] = date_
     return history
+
+
+def parse_esummary_pubdates(docsum):
+    """
+    Parse PubDate and EPubDate. Infer first published date.
+    """
+    pubdates = collections.OrderedDict()
+    for key, name in ('pub', 'PubDate'), ('epub', 'EPubDate'):
+        xpath = f"Item[@Name='{name}'][@Type='Date']"
+        text = docsum.findtext(xpath)
+        try:
+            pubdates[key] = parse_pubdate_text(text)
+        except ValueError as e:
+            id_ = int(docsum.findtext('Id'))
+            msg = (f'article {id_}; name: {key}; '
+                   f'date: {text}; error: {e}')
+            logging.info(msg)
+            continue
+    dates = set(pubdates.values())
+    dates.discard(None)
+    if dates:
+        pubdates['published'] = min(dates)
+    return pubdates
 
 
 def parse_esummary(elem):
@@ -103,16 +123,8 @@ def parse_esummary(elem):
     article = collections.OrderedDict()
     article['pubmed_id'] = int(elem.findtext('Id'))
     article['journal_nlm_id'] = elem.findtext("Item[@Name='NlmUniqueID']")
-    for key, name in ('pub', 'PubDate'), ('epub', 'EPubDate'):
-        xpath = f"Item[@Name='{name}'][@Type='Date']"
-        text = elem.findtext(xpath)
-        try:
-            article[key] = parse_pubdate_text(text)
-        except ValueError as e:
-            msg = (f'article {article["pubmed_id"]}; name: {key}; '
-                   f'date: {text}; error: {e}')
-            logging.info(msg)
-            continue
+    pubdates = parse_esummary_pubdates(elem)
+    article.update(pubdates)
     history = parse_esummary_history(elem)
     article.update(history)
     return article
@@ -150,5 +162,12 @@ def articles_to_dataframe(articles):
     """
     article_df = pandas.DataFrame(articles)
     article_df = article_df.sort_values(by='pubmed_id')
-    article_df['published'] = article_df[['epub', 'pub']].min(axis='columns')
+    # Enforce a consistent column ordering
+    columns = article_df.columns[2:].tolist()
+    columns = (
+        ['pubmed_id', 'journal_nlm_id'] +
+        sorted(x for x in columns if re.search('pub(?!med)', x)) +
+        sorted(x for x in columns if re.search('_[0-9]+$', x))
+    )
+    article_df = article_df[columns]
     return article_df
